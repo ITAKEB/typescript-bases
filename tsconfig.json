@@ -109,5 +109,5 @@
   },
   "exclude": ["node_modules2", "./tasks"],
   // "include": ["node_modules"] /*Lo unico que queremos incluir*/
-  "include": ["./interfaces"] /*Lo unico que queremos incluir*/
+  "include": ["./namespaces"] /*Lo unico que queremos incluir*/
 }
