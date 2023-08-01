@@ -1,7 +1,6 @@
-import { getPokemon } from './generics/get-pokemons';
+import { Pokemon } from './decoretors';
 
-getPokemon(4)
-  //   .then((pokemon) => console.log(pokemon.abilities[0].ability.url))
-  .then((pokemon) => console.log(pokemon.sprites.versions?.['generation-i']))
-  .catch((e) => console.log(e))
-  .finally(() => console.log('getPokemon finished'));
+const charmander = new Pokemon('Charmander');
+
+charmander.publicApi = 'Tried to change the value';
+console.log(charmander);
