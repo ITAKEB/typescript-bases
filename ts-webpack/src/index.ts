@@ -1,15 +1,7 @@
-import { Hero } from './classes/Hero';
-// import { Hero as SuperHero, Hero2 } from './classes/Hero';
-// import * as HeroClasses from './classes/Hero';
+import { getPokemon } from './generics/get-pokemons';
 
-
-// const ironman = new SuperHero('Ironman', 1, 55);
-const ironman = new Hero('Ironman', 10, 55);
-
-console.log( ironman );
-console.log( ironman.power );
-
-
-
-
-
+getPokemon(4)
+  //   .then((pokemon) => console.log(pokemon.abilities[0].ability.url))
+  .then((pokemon) => console.log(pokemon.sprites.versions?.['generation-i']))
+  .catch((e) => console.log(e))
+  .finally(() => console.log('getPokemon finished'));
